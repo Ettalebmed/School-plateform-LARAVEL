@@ -1,0 +1,84 @@
+
+.navbar {
+  width: 100%;
+  background-color: #20dbc2;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #ffff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+  color:#f4096c;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+a:hover i{
+  padding-right: 10px;
+  color: #f4096c;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.navbar a:active{
+  background-color: #04AA6D;
+}
+
+i {
+  transform: rotate(0deg);
+}
+/*serch bar*/
+.searchBar{
+  
+  align-items: center;
+  width: 40%;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+  margin-right: 0px;
+}
+
+.searchBar:focus{
+        outline: none !important;
+        border-color: #f40960;
+        box-shadow: 0 0 20px #f4096c;
+        
+
+}
+
+#buttonSearch{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+#buttonSearch:focus{
+    box-shadow: 0 0 30px #f4096c;
+}
+
+#log {
+  
+  float: right;
+
+}
+
+
